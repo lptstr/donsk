@@ -64,3 +64,9 @@ $ surge --domain mydomain.surge.sh
 ## Blogging
 Blogging with donsk may not be as easy as with Wordpress, but it still isn't as complicated as other static-site generators like Hexo or Hugo.
 To create a new post, `cd` to the `src/_content/_posts/` directory, and create a new file called `001-my-post-title.md`. Add you content into this file, and when you are done, you will have to update the `src/_content/_posts/index.md` file to list the new blog post.
+
+## Inspiration
+- [blag](https://github.com/dylanaraps/blag) by **@dylanaraps**
+
+## License
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-v3.0).
