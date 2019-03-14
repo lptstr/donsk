@@ -2,7 +2,7 @@
 
 # ------- EDIT THESE VARIABLES --------
 site_name="./kiedtl"
-folders=("computers")
+folders=("blah")
 
 # -------- DO NOT EDIT BELOW ----------
 name="ariel"
