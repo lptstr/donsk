@@ -39,3 +39,25 @@ Then install the rest of the dependencies:
 $ yay -S jpegoptim pngquant img2webp
 ```
 Fork this repository and clone it locally.
+
+## Getting Started
+First, edit the `src/_content/index.md` file and add whatever content you want. The file can contain both markdown and HTML content. All your web pages will go into the `src/_content` folder.
+
+Now you can add any other webpages you want as `.md` files. You can create folders as you wish and add content into them. Add your miscellaeneous files into the `src/_content/_files/` directory, and your images into the `src/_content/_images/` directory. The files will be copied **as is** into the root directory of you site, and the images will be optimized and copied into an `images/` folder in the root directory of your website.
+
+Next, edit the `mksite` file. Edit the variables at the top of the file, and change it to the appropriate value. Change the value of `site_name` to the name of your site, and add all your content folders to the `folders` variable. For example, if you created a `snowy.md` file in a `kittens/` folder in `src/_content/`, you must add it like so:
+```bash
+folders=("folder1" "folder2" "kittens")
+```
+**Note**: All content folders must be added for donsk to generate any content contained in the folders. If the folders are not explicitly listed, donsk will ignore those folders.
+
+Now, run `mksite`:
+```bash
+~/website/donsk/src/$ ./mksite
+```
+and donsk will generate your site and add it to `src/_website`. Now you can upload this content to whatever hosting provider you prefer, like [Surge](https://surge.sh):
+```
+$ cd _website
+$ surge --domain mydomain.surge.sh
+```
+
