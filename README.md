@@ -1,6 +1,8 @@
 # donsk
 donsk is a minimalistic static-site generator built for those who are tired of the complexity of other site generators like Hugo or Jekyll.
 
+See [this website](https://kiedtl.surge.sh) for a demo.
+
 ## Features
 - **Simplicity** - in donsk, there are no themes to configure - just the default, minimalist theme. There are also about two configuration value - just two. Very little can go wond there.
 - **Fast** - donsk is also fast. Blazingly fast. Maybe not as fast as it could have been had it been written in C or Rust, but it is still pretty fast. It is, after all, less than 100 lines of bash code.
