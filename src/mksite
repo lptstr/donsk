@@ -42,7 +42,7 @@ for folder in $folders; do
         mkdir -p "_website/$folder"
     fi
     
-    for md in _content/$folder/*.md; do
+    for md in "_content/${folder}"/*.md; do
         file_name=${md##*/}
         printf "[${name}] processing markdown file ${md} in directory ${folder}\n"
 
