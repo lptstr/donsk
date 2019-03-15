@@ -3,6 +3,9 @@
 site_name="<site_name>"
 folders=("blah")
 
-# Advanced configuration
+# --------- ADVANCED CONFIGURATION ----------
 # headers - stuff to go into the <head> tag on every HTML page
 headers="<link rel="stylesheet" href="http://invisi-text.surge.sh/cdn/production/0.2.0/invisi-text.min.css" />"
+
+# favicon - the url to your favicon. default = empty.
+favicon=""
