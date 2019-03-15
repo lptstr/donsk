@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# ------- EDIT THESE VARIABLES --------
-site_name="<site_name>"
-folders=("blah")
+source ./config
 
-# -------- DO NOT EDIT BELOW ----------
 name="donsk"
 html1='<!DOCTYPE html><html lang=en><head><link href="'
 html2="\" rel=icon type=\"image/png\"><title>${site_name}</title><meta name=viewport content=\"width=device-width\"><style>"
