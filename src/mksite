@@ -37,11 +37,15 @@ for md in _content/*.md; do
     home=
 done
 
-for folder in $folders; do
-    printf "[${name}] preparing to process folder $folder"
+ctr=0
+until [[ $ctr -eq "${#folders[@]}" ]]; do
+    printf "[${name}] preparing to process folder ${folders[$ctr]}\n"
+    let ctr+=1
 done
 
-for folder in $folders; do 
+ctr=0
+until [[ $ctr -eq "${#folders[@]}" ]]; do
+    folder="${folders[$ctr]}"
     if [[ ! -d "_website/$folder" ]]; then
         mkdir -p "_website/$folder"
     fi
@@ -58,6 +62,7 @@ for folder in $folders; do
 
         home=
     done
+    let ctr+=1
 done
 
 for md in _content/_posts/*.md; do
