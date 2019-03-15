@@ -45,7 +45,7 @@ First, edit the `src/_content/index.md` file and add whatever content you want. 
 
 Now you can add any other webpages you want as `.md` files. You can create folders as you wish and add content into them. Add your miscellaeneous files into the `src/_content/_files/` directory, and your images into the `src/_content/_images/` directory. The files will be copied **as is** into the root directory of you site, and the images will be optimized and copied into an `images/` folder in the root directory of your website.
 
-Next, edit the `mksite` file. Edit the variables at the top of the file, and change it to the appropriate value. Change the value of `site_name` to the name of your site, and add all your content folders to the `folders` variable. For example, if you created a `snowy.md` file in a `kittens/` folder in `src/_content/`, you must add it like so:
+Next, edit the `config` file. Edit the variables at the top of the file, and change it to the appropriate value. Change the value of `site_name` to the name of your site, and add all your content folders to the `folders` variable. For example, if you created a `snowy.md` file in a `kittens/` folder in `src/_content/`, you must add it like so:
 ```bash
 folders=("folder1" "folder2" "kittens")
 ```
