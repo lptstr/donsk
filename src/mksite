@@ -70,8 +70,11 @@ for md in _content/_posts/*.md; do
     file_name=${md##*/}
     printf "[${name}] processing markdown post ${md}\n"
     
-    [[ $file_name != index.md ]] &&
+    if [[ $file_name != index.md ]]; then
         home=$homelink_blog
+    else
+        home=$homelink
+    fi
 
     minify --type html \
         <<< "${template_blog/'{{content}}'/${home}$(pandoc "$md")}" \
