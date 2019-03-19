@@ -5,7 +5,12 @@ See [this website](https://kiedtl.surge.sh) for a demo.
 
 ## Features
 - **Simplicity** - in donsk, there are no themes to configure - just the default, minimalist theme. There are also only about two configuration values that you really need to edit. If you want further customization, there are a few more.
-- **Fast** - donsk is also fast. Blazingly fast. Maybe not as fast as it could have been had it been written in C or Rust, but it is still pretty fast. It is, after all, less than 100 lines of bash code.
+- **Fast** - donsk is also fast. Blazingly fast. According to hyperfine, donsk takes a maximum of ~1.5s to run (not counting image optimization):
+  ```
+  Benchmark #1: ./mksite true
+    Time (mean ± σ):      1.200 s ±  0.032 s    [User: 791.3 ms, System: 333.0 ms]
+    Range (min … max):    1.148 s …  1.449 s    100 runs
+  ```
 - **Hackable** - because donsk is just a few bash scripts, it is very easy to tweak or customize donsk to whatever you like.
 
 ## Installation
